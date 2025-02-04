@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ku">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نرخی دراو</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="TTT">
+            <a href="index.html" class="back-button" data-lang="back">گەرانەوە</a>
+            <select id="languageSelect" onchange="changeLanguage()" class="language-select1">
+                <option value="ku">کوردی</option>
+                <option value="ar">العربية</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+        <div class="header">
+            <img src="ppp.png" alt="لۆگۆ" class="logo">
+        </div>
+        
+        <div class="section">
+            <h1 id="currencyName" data-lang="title">نرخی دراوەکان</h1>
+            <select id="modeSelect" onchange="setMode()">
+                <option value="buy" data-lang="buy">کڕین</option>
+                <option value="sell" data-lang="sell">فرۆشتن</option>
+            </select>
+            <p id="selectedPrice"></p>
+        </div>
+
+        <div class="section">
+            <h2 data-lang="amount"> بڕی پارەکەت بنووسە </h2>
+            <input type="number" id="amountInput" data-lang="amountPlaceholder" placeholder="بڕی پارەکەت بنووسە">
+            <button onclick="calculate()" data-lang="calculate">حساب بکە</button>
+            <p id="result" data-lang="result"></p>
+        </div>
+    </div>
+
+    <script src="currencyScript.js"></script>
+</body>
+</html>

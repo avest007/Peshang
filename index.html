@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ku">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نرخی دراوەکان</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <select id="languageSelect" onchange="changeLanguage()" class="language-select">
+            <option value="ku">کوردی</option>
+            <option value="ar">العربية</option>
+            <option value="en">English</option>
+        </select>
+        <div class="header">
+            <img src="ppp.png" alt="لۆگۆ" class="logo">
+            <h1 data-lang="title">نرخی دراوەکان</h1>
+        </div>
+        
+        <!-- بەروار و کات -->
+        <div id="datetime" class="datetime"></div>
+        
+        <!-- لیستی دراوەکان -->
+        <div class="currency-list">
+            <div class="currency-item" onclick="selectCurrency('IQD', 150000, 151250)">
+               <div class="currencysell"><span class="currency-sell"><strong>151000  :</strong><strong data-lang="sell">فرۆشتن</strong></span></div>
+                <div class="currencybuy"><span class="currency-buy"><strong>150000  :</strong><strong data-lang="buy">کڕین</strong></span></div>
+                <div class="namecurrency"><span class="currency-name"><strong data-lang="namecurrency10">دینار دەیی (IQD)</strong></span></div>
+            </div>
+
+            <div class="currency-item" onclick="selectCurrency('IQD', 150000, 151250)">
+                <div class="currencysell"><span class="currency-sell"><strong>151000  :</strong><strong data-lang="sell">فرۆشتن</strong></span></div>
+                <div class="currencybuy"><span class="currency-buy"><strong>150000  :</strong><strong data-lang="buy">کڕین</strong></span></div>
+                <div class="namecurrency"><span class="currency-name"><strong data-lang="namecurrency25">دینار سور  (IQD)</strong></span></div>
+            </div>
+            
+            <div class="currency-item" onclick="selectCurrency('IQD', 102, 104)">
+                <div class="currencysell"><span class="currency-sell"><strong>104  :</strong><strong data-lang="sell">فرۆشتن</strong></span></div>
+                <div class="currencybuy"><span class="currency-buy"><strong>102  :</strong><strong data-lang="buy">کڕین</strong></span></div>
+                <div class="namecurrency"><span class="currency-name"><strong data-lang="namecurrency1">یۆڕۆ (EUR)</strong></span></div>
+            </div>
+            
+            <div class="currency-item" onclick="selectCurrency('IQD', 121, 124)">
+                <div class="currencysell"><span class="currency-sell"><strong>124  :</strong><strong data-lang="sell">فرۆشتن</strong></span></div>
+                <div class="currencybuy"><span class="currency-buy"><strong>121  :</strong><strong data-lang="buy">کڕین</strong></span></div>
+                <div class="namecurrency"><span class="currency-name"><strong data-lang="namecurrency2">پاوەند (GBP)</strong></span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
